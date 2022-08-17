@@ -1,0 +1,61 @@
+.challenge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #424C7C;
+  margin: auto;
+}
+
+#dark .challenge-container {
+  color: white;
+}
+
+.title-container {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    width: 50%;
+}
+
+.challenge-choice-text {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    font-size: 1.05rem;
+}
+.challenge-content {
+    width: 100%;
+}
+.challenge-choice {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+.challenge-choice:hover{
+    transform: scale(1.1);
+}
+
+#dark .challenge-choice {
+    background-color: #EAEAEA;
+    color: #424C7C;
+}
+
+.challenge-name {
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}

@@ -1,0 +1,21 @@
+
+LEXIQUE : nom mot, texte
+CRYPTOMONNAIES : code cryptos, nom
+PEUT AJOUTER, 0N UTILISATEUR, 0N CRYPTOMONNAIES
+UTILISATEUR : code utilisateur, pseudo, mail, mot de passe, niveau, points
+
+ASSOCIER, 0N CRYPTOMONNAIES, 0N ARTICLES
+PARTICIPER, 0N UTILISATEUR, 0N CHALLENGES
+
+ARTICLES : code article, nom, auteur, texte
+REFERENCER, 0N ARTICLES, 0N CHALLENGES
+CHALLENGES : nom, récompense, code articles, texte, 
+CORRESPOND, 01 CHALLENGES, 0N NIVEAU
+NIVEAU : code niveau, nom
+
+POSSEDE, 0N CHALLENGES, 11 QUESTION
+
+QUESTION : code question, description
+PROPOSER, 11 REPONSE, 0N QUESTION
+VALIDER,  11 REPONSE, 11 QUESTION
+REPONSE : code reponse, reponse

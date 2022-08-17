@@ -1,0 +1,22 @@
+.selected-button {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    color: white;
+    background-color: #424C7C;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #424C7C;;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+}
+
+#dark .selected-button {
+    background-color: white;
+    color: #424C7C;
+    border: 1px solid #424C7C;
+}

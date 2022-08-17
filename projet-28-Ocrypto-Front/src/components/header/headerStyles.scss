@@ -1,0 +1,29 @@
+.App-header {
+    width: 90%;
+    margin: auto;
+    color: #424C7C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: #424C7C 2px solid;
+}
+
+#dark .App-header {
+    color: white;
+    border-bottom: white 2px solid;
+}
+.App-logo-container {
+    width: 20%;
+}
+.App-logo {
+    max-width: 100%;
+    padding: 40px 0px 40px 0px; 
+}
+
+//RESPONSIVE
+
+@media all and (max-width: 991px) {
+    .App-logo-container {
+        width: 100%;
+    }
+}

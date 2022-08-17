@@ -1,0 +1,46 @@
+.PageNotFound{
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.notfound{
+    font-size: 20rem;
+    opacity: 50%;
+    font-weight: bold;
+}
+
+.texte1{
+    opacity: 50%;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.img404{
+    width: 80%;
+    height: 80%;
+}
+
+//RESPONSIVE 
+@media all and (max-width: 991px) {
+    
+    .notfound{
+        font-size: 10rem;
+        text-align: center;
+    }
+    .texte1 {
+        font-size: 2rem;
+    }
+    .img404{
+        height: 45%;
+        margin:0 auto;
+    }
+
+    
+}

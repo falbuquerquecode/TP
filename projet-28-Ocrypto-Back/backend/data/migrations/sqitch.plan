@@ -1,0 +1,6 @@
+%syntax-version=1.0.0
+%project=ocrypto
+
+init 2022-06-09T09:34:29Z Etudiant O'clock <student@teleporter> # db initialization
+seedingAdd 2022-06-10T07:22:39Z spedata <student@teleporter> # seeding injection for test
+constraint 2022-06-23T08:20:08Z spedata <student@teleporter> # add constraint to check fields

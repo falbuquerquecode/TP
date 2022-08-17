@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>LEXIQUE</span> (
+    <span class='primary'>nom mot</span>,
+    <span class='normal'>texte</span>
+  )
+</div>
+<div>
+  <span class='relation'>CRYPTOMONNAIES</span> (
+    <span class='primary'>code cryptos</span>,
+    <span class='normal'>nom</span>
+  )
+</div>
+<div>
+  <span class='relation'>PEUT AJOUTER</span> (
+    <span class='foreign primary'>code utilisateur</span>,
+    <span class='foreign primary'>code cryptos</span>
+  )
+</div>
+<div>
+  <span class='relation'>UTILISATEUR</span> (
+    <span class='primary'>code utilisateur</span>,
+    <span class='normal'>pseudo</span>,
+    <span class='normal'>mail</span>,
+    <span class='normal'>mot de passe</span>,
+    <span class='normal'>niveau</span>,
+    <span class='normal'>points</span>
+  )
+</div>
+<div>
+  <span class='relation'>ASSOCIER</span> (
+    <span class='foreign primary'>code cryptos</span>,
+    <span class='foreign primary'>code article</span>
+  )
+</div>
+<div>
+  <span class='relation'>PARTICIPER</span> (
+    <span class='foreign primary'>code utilisateur</span>,
+    <span class='foreign primary'>nom</span>
+  )
+</div>
+<div>
+  <span class='relation'>ARTICLES</span> (
+    <span class='primary'>code article</span>,
+    <span class='normal'>nom</span>,
+    <span class='normal'>auteur</span>,
+    <span class='normal'>texte</span>
+  )
+</div>
+<div>
+  <span class='relation'>REFERENCER</span> (
+    <span class='foreign primary'>code article</span>,
+    <span class='foreign primary'>nom</span>
+  )
+</div>
+<div>
+  <span class='relation'>CHALLENGES</span> (
+    <span class='primary'>nom</span>,
+    <span class='normal'>récompense</span>,
+    <span class='normal'>code articles</span>,
+    <span class='normal'>texte</span>,
+    <span class='normal'></span>,
+    <span class='foreign'>code niveau</span>
+  )
+</div>
+<div>
+  <span class='relation'>NIVEAU</span> (
+    <span class='primary'>code niveau</span>,
+    <span class='normal'>nom</span>
+  )
+</div>
+<div>
+  <span class='relation'>QUESTION</span> (
+    <span class='primary'>code question</span>,
+    <span class='normal'>description</span>,
+    <span class='foreign'>nom</span>
+  )
+</div>
+<div>
+  <span class='relation'>REPONSE</span> (
+    <span class='primary'>code reponse</span>,
+    <span class='normal'>reponse</span>,
+    <span class='foreign'>code question</span>,
+    <span class='foreign'>code question.1</span>
+  )
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+// DESKTOP MENU
+.App-menu {
+    font-size: 1.1rem;
+    padding: 5px;
+    margin: 8px;
+    width: 90%;
+    display: flex;
+    align-items: baseline; 
+}
+
+.App-nav {
+    margin-left: auto;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+} 
+
+.App-button {
+    margin-left: auto;
+}
+
+.App-link {
+    margin: 8px;
+    color: #424C7C;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#dark .App-link {
+    color: white;
+}
+
+ .App-link:hover {
+    box-shadow: inset 350px 0 0 0 #424C7C;
+    color: white;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+#dark .App-link:hover {
+    box-shadow: inset 350px 0 0 0 white;
+    color: #424C7C;
+    transition: color .3s ease-in-out, box-shadow .7s ease-in-out;
+  }
+
+.App-button-login {
+    background-color: #424C7C;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.App-button-signin {
+    background-color: white;
+    color: #424C7C;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#dark .App-button-signin {
+    background-color: #424C7C;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.App-button-login:hover {
+    color: #424C7C;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-in .1s;
+}
+
+.App-button-signin:hover {
+    color: #424C7C;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-out .1s;
+}
+
+#dark .App-button-signin:hover {
+    color: #424C7C;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-in .1s;
+}
+
+.App-button-profile {
+    background-color: #424C7C;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.App-button-profile:hover {
+    color: #424C7C;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-in .1s;
+}
+.App-nav-burger {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: inherit;
+    display: none;
+    border: none;
+    padding-top: 40px;
+    margin-left: 10px;
+}
+.switch-container {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+label { 
+    margin-right: 10px;
+}
+.material-icons{
+    color: white;
+}
+// RESPONSIVE MENU
+@media all and (max-width: 1300px) {
+    .App-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+        background-color: white;
+        visibility: hidden;
+        transition: all .8s ease-out;
+    }
+    #dark .App-nav {
+        background-color: #424C7C;
+
+    }
+    .show-nav, .App-link {
+        right: 0;
+        width: 100vw;
+        visibility: visible;
+        z-index: 1; // commenter pour retirer le burger menu et le bouton dark mode quand on affiche le menu
+    }
+    .App-link {
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+        color: #424C7C;
+        text-align: center;
+    }
+    .App-nav-item::after {
+        display: block;
+        content: "";
+        margin: 0 auto;
+        width: 3vw;
+        height: 1px;
+        background: #424C7C;
+    }
+    #dark .App-nav-item::after {
+        background-color: white;
+    }
+    .App-nav-item:last-child::after {
+        display: none;
+    }
+    .App-nav-burger {
+        display: flex;
+        top: 1rem;
+        right: 1rem;
+        //z-index: 1;
+    }
+    .App-nav-burger:hover {
+        cursor: pointer;
+    }
+    .burger-bar, .burger-bar::before, .burger-bar::after {
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background-color: #424C7C;
+        transition: all .5s ease-in-out;
+    }
+    #dark .burger-bar, #dark .burger-bar::before, #dark .burger-bar::after {
+        background-color: white;
+    }
+    .burger-bar::before, .burger-bar::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+    .burger-bar::before {
+        transform: translateY(-12px);
+    }
+    .burger-bar::after {
+        transform: translateY(12px);
+    }
+    .show-nav .burger-bar {
+        width: 0;
+        background: transparent;
+    }
+    .show-nav .burger-bar::before {
+        transform: rotate(45deg);
+    }
+    .show-nav .burger-bar::after {
+        transform: rotate(-45deg);
+    }
+    .App-nav-item {
+        transform: translateY(100vh);
+    }
+    .show-nav .App-nav-item {
+        transform: translateY(0);
+    }
+    .show-nav .slideInDown-1 {
+        transition: all 1s ease-out;
+    }
+    .show-nav .slideInDown-2 {
+        transition: all 1.1s ease-out;
+    }
+    .show-nav .slideInDown-3 {
+        transition: all 1.2s ease-out;
+    }
+    .show-nav .slideInDown-4 {
+        transition: all 1.3s ease-out;
+    }
+    .show-nav .slideInDown-5 {
+        transition: all 1.4s ease-out;
+    }
+}
+

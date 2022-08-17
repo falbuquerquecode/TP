@@ -1,0 +1,118 @@
+.coin-page {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    height: 100%;
+    color: #424C7C;
+}
+
+#dark .coin-page {
+    color: white;
+}
+
+.coin-page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #424C7C;
+    margin: 30px 0;
+    padding: 0px 20px;
+}
+
+#dark .coin-page-header {
+    border-right: 1px solid white;
+}
+
+.coin-page-img {
+    width: 40%;
+}
+.coin-page-name {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.coin-page-description {
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: justify;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.coin-page-rank {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    margin-right: auto;
+}
+
+.coin-page-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.coin-page-link {
+    font-size: 1.2rem;
+    margin: 40px 0;
+    padding: 5px;
+}
+
+.coin-page-link:hover {
+    box-shadow: inset 250px 0 0 0 #424C7C;
+    color: white;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 5px;
+}
+
+#dark .coin-page-link:hover {
+    box-shadow: inset 250px 0 0 0 white;
+    color: #424C7C;
+    transition: color .3s ease-in-out, box-shadow .7s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn-previous-page {
+    background-color: #424C7C;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 155px;
+    width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .coin-page {
+        width: 100%;
+        flex-direction: column;
+    }
+    .coin-page-header {
+        width: 100%;
+        margin: 0;
+    }
+    .coin-page-img {
+        width: 30%;
+    }
+    .coin-page-name {
+        font-size: 3rem;
+    }
+    .coin-chart-container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+

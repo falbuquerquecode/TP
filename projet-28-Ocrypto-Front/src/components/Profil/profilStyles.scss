@@ -1,0 +1,128 @@
+.profil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 30px;
+}
+.profil-header {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.profil-title{
+    color: #424C7C;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+}
+#dark .profil-title {
+    color: white;
+}
+.profil-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #424C7C;
+    text-align: center;
+    font-size: 1.6rem;
+}
+#dark .profil-card {
+    color: white;
+}
+#dark .profil-update {
+    background-color: white;
+    color: #424C7C;
+}
+.profil-update:hover {
+    color: #424C7C;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-in .1s;
+}
+.profil-scoreState {
+    padding: 30px;
+    color: #424C7C;
+    font-size: 1.6rem;
+}
+#dark .profil-scoreState {
+    color: white;
+}
+.coin-cointainer-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coin-row-profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.profil-favorites {
+    margin-bottom: 30px;
+}
+
+.profil-favorites-title {
+    color: #424C7C;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+}
+
+#dark .profil-favorites-title {
+    color: white;
+}
+
+.modifier-alert{
+    color: red;
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .profil-container {
+        width: 100%;
+    }
+    .profil-header {
+        width: 100%;
+    }
+    .profil-title {
+        width: 100%;
+    }
+    .profil-card {
+    }
+    .profil-update {
+        width: 100%;
+    }
+    .profil-scoreState {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px 0px;
+    }
+    .coin-cointainer-profil {
+        width: 100%;
+    }
+    .coin-row-profil { 
+        overflow: scroll;
+        width: 80%;
+    }
+    .profil-favorites {
+        width: 100%;
+    }
+    .profil-favorites-title {
+        width: 100%;
+    }
+}
+    

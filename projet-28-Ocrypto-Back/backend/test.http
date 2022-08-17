@@ -1,0 +1,182 @@
+################################################################################
+# Fichier de test des routes HTTP de l'API O'Crypto
+# Nécessite l'extension REST Client pour VSCode
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+################################################################################
+
+# Uncomment this line  for with hosted API
+# @endpoint = https://ocrypto-backend.herokuapp.com
+ @endpoint = http://localhost:{{$dotenv PORT}}
+
+
+#########################
+#         ANSWER        #
+#########################
+
+### Get the good answer link to a question id
+GET {{ endpoint }}/answer/1
+
+### Get the answers list link to a question id
+GET {{ endpoint }}/answers/1
+
+#########################
+#        ARTICLE        #
+#########################
+
+### Get all articles in database
+GET {{ endpoint }}/articles
+
+### Get article with an id
+GET {{ endpoint }}/article/6
+
+
+#########################
+#         CHALLENGE     #
+#########################
+
+### Get all challenges
+GET {{ endpoint }}/challenges
+
+### Get a challenge with it's name
+GET {{ endpoint }}/challenge/Blockchain
+
+
+#########################
+#         CRYPTO        #
+#########################
+
+### Get all favorite list of crypto currencies  attached to a user with his id
+GET {{ endpoint }}/favoris/3/cryptos
+
+### Post a new crypto currencie in favorite user's list with user id and crypto currencie id
+POST {{ endpoint }}/favoris/21/ethereum
+
+### Post method for delete a crypto currencie in user's favorite list with user id and crypto currencie id
+POST {{endpoint}}/deleteFavoris/21/ethereum
+
+#########################
+#        HOMEPAGE       #
+#########################
+
+### Get api homepage
+GET {{ endpoint }}/
+
+#########################
+#         LEVEL         #
+#########################
+
+### Get the level list of challenges
+GET {{endpoint}}/level
+
+#########################
+#         LEXICON       #
+#########################
+
+### Get all lexicon entries
+GET {{endpoint}}/lexicon
+
+### Get one lexicon entry with it's name
+GET {{endpoint}}/lexicon/Airdrop :
+
+#########################
+#         QUESTION      #
+#########################
+
+### Get one question with it's id
+GET {{endpoint}}/question/1
+
+### Get all questions
+GET {{endpoint}}/questions
+
+
+#########################
+#    RECOVERYPASSWORD   #
+#########################
+
+### Set a new password and send an email to the user
+POST {{endpoint}}/forgotten-password
+content-type: application/json
+
+{
+	"email":"quentin00bouquet@gmail.com"
+}
+
+#########################
+#         REWARD        #
+#########################
+
+### Get reward
+GET {{ endpoint }}/answer/checking/6
+content-type: application/json
+
+{
+	"id": 14,
+	"description": "Une chaîne de blocs technologiques de stockage et de transmission d’infos",
+	"question_id": 6
+}
+
+#########################
+#         USER          #
+#########################
+
+### Post sign-in
+POST {{ endpoint }}/sign-in
+content-type: application/json
+
+{
+	"pseudo":"quentinDev",
+	"email":"quentin00bouquet@gmail.com",
+	"password":"quentin"
+}
+
+
+### Get log-in 
+GET {{ endpoint }}/log-in/
+content-type: application/json
+
+{
+	"pseudo":"quentinDev",
+	"email":"quentin00bouquet@gmail.com",
+	"password":"quentin"
+}
+
+### Post log-in
+POST {{ endpoint }}/log-in
+content-type: application/json
+
+{
+	"pseudo":"quentinDev",
+	"email":"quentin00bouquet@gmail.com",
+	"password":"quentin"
+}
+
+
+### Get profile
+GET {{ endpoint }}/profile
+content-type: application/json
+
+{
+	"pseudo":"quentinDev",
+	"email":"quentin00bouquet@gmail.com",
+	"password":"quentin"
+}
+
+### Delete profile with an email
+DELETE {{ endpoint }}/profile/update
+content-type: application/json
+
+{
+	"pseudo":"quentinDev",
+	"email":"quentin00bouquet@gmail.com",
+	"password":"quentin"
+}
+
+### Patch profile with an email
+PATCH {{ endpoint }}/profile/update
+content-type: application/json
+
+{
+	"pseudo":"quentinDevdu46",
+	"email":"quentin00bouquet@gmail.com"
+
+}

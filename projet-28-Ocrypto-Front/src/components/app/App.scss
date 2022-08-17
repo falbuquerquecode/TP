@@ -1,0 +1,41 @@
+.App {
+  font-family: 'Lexend Deca', sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+  //overflow: scroll;
+}
+button:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    box-shadow: none !important;
+}
+a{
+  text-decoration: none !important;
+}
+li{
+  list-style: none;
+}
+#light {
+  background-color: white;
+  color: #424C7C;
+}
+#dark {
+  background-color: #424C7C;
+  color: white;
+  min-height: 100%;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin: 10px;
+  color: #424C7C;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

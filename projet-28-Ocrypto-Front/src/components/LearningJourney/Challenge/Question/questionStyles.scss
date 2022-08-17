@@ -1,0 +1,122 @@
+@import '/src/styles/vars';
+
+#root{
+  height: 100vh;
+}
+.main-challenge {
+  width: 60%;
+  border: 1px solid $grey;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+}
+.title-question {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: $blueLogo;
+}
+#dark .title-question {
+  color: white;
+}
+.question {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  color: $blueLogo;
+  padding-bottom: 20px
+}
+.answers-description {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: $blueLogo;
+}
+.answer-choice {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#dark .answers-description {
+  background-color: $blueLogo;
+  color: white;
+}
+.answers-description:hover {
+  background-color: $blueLogo;
+  color: white;
+}
+#dark .answers-description:hover {
+  background-color: white;
+  color: $blueLogo;
+}
+input[type="submit"]:focus {
+  background-color: $blueLogo;
+  color: white;
+}
+#dark input[type="submit"]:focus {
+  background-color: white;
+  color: $blueLogo;
+}
+.btn-response {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: $blueLogo;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 15%;
+}
+#dark .question {
+  color: white;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.end-challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $blueLogo;
+  color: white;
+  cursor: pointer;
+}
+.challenge-score {
+  font-size: 1.2rem;
+  color: $blueLogo;
+  background-color: white;
+}
+#dark .challenge-score {
+  color: white;
+  background-color: $blueLogo;
+}
+
+// Responsive Challenge
+@media screen and (max-width: 991px) {
+  .main-challenge {
+    width: 90%;
+    padding: 10px;
+  }
+  .answer-choice {
+    width: 100%;
+    font-size: 0.4rem;
+  }
+}

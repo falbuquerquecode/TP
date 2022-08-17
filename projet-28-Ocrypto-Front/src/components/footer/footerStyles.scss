@@ -1,0 +1,36 @@
+.App-footer {
+    background-color: #424C7C;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #424C7C;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.Footer-nav {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-around;
+    width: 100%;
+}  
+.Footer-copyright{
+    box-shadow: inset 0 0 0 0 white;
+    color: white;
+    border-radius: 8px;
+    margin: 0 -.25rem;
+    padding: 5px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+.Footer-link{
+    box-shadow: inset 0 0 0 0 white;
+    color: white;
+    border-radius: 8px;
+    margin: 0 -.25rem;
+    padding: 5px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+ .Footer-link:hover {
+    box-shadow: inset 250px 0 0 0 white;
+    color: #424C7C;
+  }

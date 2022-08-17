@@ -1,0 +1,131 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .coin-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    color: #424C7C;
+    margin-bottom: 35px;
+  }
+
+  #dark .coin-app {
+    color: white;
+  }
+
+  .row-description {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  
+  .coin-search {
+    margin: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .coin-text {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  .coin-input {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 300px;
+    height: 50px;
+    border: #424C7C 2px solid;
+    border-radius: 8px;  
+    color: #424C7C;
+  }
+  
+  .coin-input::placeholder {
+    color: #424C7C;
+    font-size: 1rem;
+  }
+
+  .coin-rank-description {
+    width: 120px;
+    text-align: end;
+  }
+
+  .coin-name-description {
+    width: 140px;
+    text-align: end;
+  }
+
+  .coin-price-description {
+    width: 240px;
+    text-align: end;
+  }
+
+  .coin-volume-description {
+    width: 300px;
+    text-align: end;
+  }
+
+  .coin-percent-description {
+    width: 230px;
+    text-align: end;
+  }
+
+  .coin-marketcap-description {
+    width: 380px;
+    text-align: end;
+  }
+  .more-crypto {
+    color: #424C7C;
+    background-color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    cursor: pointer;
+    margin: 30px 0 50px;
+}
+
+.more-crypto:hover {
+    background-color: #424C7C;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-in .1s;
+    text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .coin-app {
+        width: 80%;
+        overflow: scroll;
+    }
+    .coin-text { 
+        font-size: 1.8rem;
+    }
+    .coin-search {
+        margin: 64px;
+    }
+    .coin-input {
+       font-size: 0.9rem;
+    }
+    .row-description {
+      visibility: hidden;
+    }
+    .coin-container {
+      overflow: scroll;
+    }
+  
+}

@@ -1,0 +1,101 @@
+.lexicon-title{
+	font-size: 2rem;
+	font-weight: 700;
+    display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 40px;
+}
+
+#dark .lexicon-title{
+    color: white;
+}
+
+.lexicon-container{
+    width: 90%;
+    color: #424C7C;
+    margin: auto;
+}
+
+.SB {
+    border-top: 2px solid;
+    color: #424C7C;
+    width: 100%;
+    margin: auto;
+    opacity: 50%;
+}
+
+#dark .SB {
+    color: white;
+}
+
+.lexicon-word-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#dark .lexicon-word-title {
+    color: white;
+}
+.lexicon-word-description {
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+#dark .lexicon-word-description {
+    color: white;
+}
+//DIV ALL----------------------------------
+.divAll{
+    display: flex;
+    color: #424C7C;
+    width: 100%;
+    flex-direction: column;
+}
+
+.lexicon-search {
+    align-items: center;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.articles-input {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 300px;
+    height: 50px;
+    border: #424C7C 2px solid;
+    border-radius: 8px;
+    color: #424C7C;
+    text-align: center;
+}
+.lexicon-more {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.more-words {
+    color: #424C7C;
+    background-color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 20%;
+    align-items: center;
+}
+
+.more-words:hover {
+    background-color: #424C7C;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #424C7C;
+    transition: ease-in .1s;
+    text-align: center;
+}
